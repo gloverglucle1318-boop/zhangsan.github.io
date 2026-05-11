@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陆欣怡 | 个人求职主页</title>
+    <meta name="description" content="陆欣怡的个人求职网站 - 内容运营、跨境电商运营、数据分析">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        // Siamese Cat Theme Colors
+                        primary: '#4B8FE3',       // Siamese Eye Blue
+                        primaryHover: '#3A74C2',
+                        darkBg: '#2C2018',        // Deep Brown Dark Mode Background
+                        darkCard: '#3A2B20',      // Lighter Brown Dark Mode Cards
+                        catPink: '#F3A8A1',       // Cute Paw Pink
+                        // Overriding default slate with warm beige/brown tones
+                        slate: {
+                            50: '#FFFDFA',  // Bright cream
+                            100: '#FFF7ED', // Warm cream
+                            200: '#F0E4D8', // Light beige
+                            300: '#E0CDBD', // Beige
+                            400: '#C7B19D', // Light brown
+                            500: '#A68A74', // Muted brown
+                            600: '#876850', // Brown
+                            700: '#634732', // Dark brown
+                            800: '#4A3525', // Siamese face brown (main text)
+                            900: '#2C2018', // Very dark brown (dark mode bg)
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-darkBg dark:text-slate-200 transition-colors duration-300 antialiased font-sans">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-primary flex items-center gap-2">
+                <i class="fa-solid fa-cat"></i> Xinyi.
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#hero" class="nav-link hover:text-primary transition-colors">首页</a>
+                <a href="#about" class="nav-link hover:text-primary transition-colors">关于我</a>
+                <a href="#experience" class="nav-link hover:text-primary transition-colors">经历</a>
+                <a href="#skills" class="nav-link hover:text-primary transition-colors">技能</a>
+                <a href="#contact" class="nav-link hover:text-primary transition-colors">联系</a>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i class="fa-solid fa-moon dark:hidden text-slate-600"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2 text-primary">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <!-- Decorative Cat Paws Background -->
+        <div class="absolute top-20 left-10 opacity-20 dark:opacity-10 transform -rotate-12 animate-pulse"><i class="fa-solid fa-paw text-6xl text-catPink"></i></div>
+        <div class="absolute bottom-40 right-20 opacity-20 dark:opacity-10 transform rotate-12 animate-pulse delay-1000"><i class="fa-solid fa-paw text-8xl text-catPink"></i></div>
+        
+        <div class="max-w-6xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10 w-full reveal">
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-2 border border-primary/20">
+                    大四在读 · 可立即到岗 · 稳定实习6个月
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    你好！我是 <span class="text-primary relative inline-block">陆欣怡
+                        <!-- Cute cat ear decorative above name -->
+                        <span class="absolute -top-6 -right-4 text-2xl rotate-12">🐱</span>
+                    </span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium">
+                    物流管理专业 / 寻找运营类实习
+                </h2>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed max-w-lg mx-auto md:mx-0">
+                    专注于<span class="text-slate-800 dark:text-slate-200 font-semibold">数据驱动运营、电商平台实操与活动策划</span>。擅长使用 AI 工具提升效率，拥有 5000+ 条数据处理经验与 eBay 全流程上架实战能力。
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                    <a href="#contact" class="px-8 py-3 bg-primary text-white font-medium rounded-full hover:bg-primaryHover hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:-translate-y-1">
+                        联系我
+                    </a>
+                    <a href="简历.pdf" target="_blank" class="px-8 py-3 bg-white dark:bg-darkCard text-primary border border-primary/30 font-medium rounded-full hover:bg-slate-50 dark:hover:bg-slate-800 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> 下载简历
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center relative">
+                <!-- Cute Cat Illustration / Avatar Placeholder -->
+                <div class="relative w-72 h-72 md:w-96 md:h-96">
+                    <div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+                    
+                    <!-- Cute Cat Ears added to the top of the portrait -->
+                    <div class="absolute -top-6 left-0 w-full flex justify-between px-12 md:px-20 z-0 transform transition-transform duration-500 hover:translate-y-2">
+                        <i class="fa-solid fa-caret-up text-6xl text-slate-800 dark:text-slate-200 transform -rotate-12"></i>
+                        <i class="fa-solid fa-caret-up text-6xl text-slate-800 dark:text-slate-200 transform rotate-12"></i>
+                    </div>
+
+                    <div class="relative w-full h-full bg-white dark:bg-darkCard rounded-full border-4 border-white dark:border-slate-700 shadow-2xl flex items-center justify-center overflow-hidden z-10 cat-avatar-container transform transition duration-500 hover:scale-105">
+                        <!-- User Profile Photo -->
+                        <img src="assets/images/profile.jpg" alt="陆欣怡" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Decorative floating elements -->
+                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-white p-3 rounded-full shadow-lg animate-bounce z-20">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="absolute bottom-8 -left-8 bg-pink-400 text-white p-4 rounded-full shadow-lg animate-bounce delay-300 z-20">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 dark:text-white inline-flex items-center gap-3">
+                    <i class="fa-solid fa-paw text-primary text-xl"></i> 核心优势
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Advantage 1 -->
+                <div class="feature-card bg-slate-50 dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">数据驱动运营</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        熟练 SQL、Excel、Tableau，独立完成 5000+ 条数据处理与可视化报告，擅长从营收、客流、商品维度定位运营优化方向。
+                    </p>
+                </div>
+                <!-- Advantage 2 -->
+                <div class="feature-card bg-slate-50 dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">电商平台实操</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        独立负责 eBay 全流程上架，搭建标准化 SOP，日均上架 30 款，合规率 100%，匹配准确率 98%+。
+                    </p>
+                </div>
+                <!-- Advantage 3 -->
+                <div class="feature-card bg-slate-50 dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-500/10 text-purple-500 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">活动策划与执行</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        主导区级政企合作消费项目，带动家庭客群增长 30%+；闭环执行校园营销赛事，带动销售额 15 万元。
+                    </p>
+                </div>
+                <!-- Advantage 4 -->
+                <div class="feature-card bg-slate-50 dark:bg-darkCard p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-green-500/10 text-green-500 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">AI工具应用</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        熟练使用 ChatGPT、Antigravity 及 Prompt 工程，擅长搭建自动化写稿工作流，用 AI 大幅提升工作效率。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 md:px-8 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 dark:text-white inline-flex items-center gap-3">
+                    <i class="fa-solid fa-briefcase text-primary"></i> 实习与工作经历
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="relative border-l-2 border-primary/20 ml-3 md:ml-0 md:pl-0">
+                <!-- Timeline Item 1 -->
+                <div class="mb-10 ml-6 md:ml-8 relative timeline-item group">
+                    <div class="absolute -left-8 md:-left-10 mt-1.5 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white">GEO内容运营</h3>
+                            <span class="text-primary font-medium bg-primary/10 px-3 py-1 rounded-full text-sm mt-2 md:mt-0 w-fit">2026.04 - 至今</span>
+                        </div>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-medium mb-3"><i class="fa-regular fa-building mr-2"></i>上海智推时代</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+                            <li>负责国内全平台 GEO 内容优化，用 <span class="font-bold text-primary">Antigravity</span> 完成内容生产、改写与搜索策略调优。</li>
+                            <li>搭建自动化写稿工作流，单篇处理时长<span class="font-bold text-primary">缩短50%</span>，日均产出 20 篇。</li>
+                            <li>沉淀 40 余条内容规范，内容收录率<span class="font-bold text-primary">提升35%</span>。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="mb-10 ml-6 md:ml-8 relative timeline-item group">
+                    <div class="absolute -left-8 md:-left-10 mt-1.5 w-4 h-4 rounded-full bg-blue-400 ring-4 ring-blue-400/20 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white">跨境电商运营</h3>
+                            <span class="text-slate-500 font-medium text-sm mt-2 md:mt-0">2026.03 - 2026.04</span>
+                        </div>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-medium mb-3"><i class="fa-regular fa-building mr-2"></i>上海金仪工贸有限公司</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+                            <li>独立负责 eBay 汽配产品全流程上架，合规率<span class="font-bold text-primary">100%</span>，匹配准确率<span class="font-bold text-primary">98%+</span>。</li>
+                            <li>日均上架 30 款，有效提升 listing 曝光与转化。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="mb-10 ml-6 md:ml-8 relative timeline-item group">
+                    <div class="absolute -left-8 md:-left-10 mt-1.5 w-4 h-4 rounded-full bg-purple-400 ring-4 ring-purple-400/20 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white">活动策划执行</h3>
+                            <span class="text-slate-500 font-medium text-sm mt-2 md:mt-0">2025.04 - 2025.08</span>
+                        </div>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-medium mb-3"><i class="fa-regular fa-building mr-2"></i>上海太太乐福斯特食品有限公司</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+                            <li>第五届“五五购物节”嘉定区重点政企项目核心策划。</li>
+                            <li>带动家庭客群<span class="font-bold text-primary">增长30%+</span>，实现品牌曝光<span class="font-bold text-primary">50万+次</span>。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="mb-10 ml-6 md:ml-8 relative timeline-item group">
+                    <div class="absolute -left-8 md:-left-10 mt-1.5 w-4 h-4 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white">数据分析师</h3>
+                            <span class="text-slate-500 font-medium text-sm mt-2 md:mt-0">2022.10 - 2022.12</span>
+                        </div>
+                        <h4 class="text-slate-600 dark:text-slate-400 font-medium mb-3"><i class="fa-regular fa-building mr-2"></i>上海云拿智能科技有限公司</h4>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+                            <li>处理 <span class="font-bold text-primary">5000+ 条</span>运营数据，通过 Tableau 进行可视化展示，输出完整的分析报告以指导运营策略。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- Timeline Item 5 & 6 summarized for flow -->
+                 <div class="ml-6 md:ml-8 relative timeline-item group">
+                    <div class="absolute -left-8 md:-left-10 mt-1.5 w-4 h-4 rounded-full bg-slate-400 ring-4 ring-slate-400/20 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white dark:bg-darkCard p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-lg transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white">早期项目经历</h3>
+                            <span class="text-slate-500 font-medium text-sm mt-2 md:mt-0">2022.04 - 2023.06</span>
+                        </div>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+                            <li><span class="font-medium text-slate-800 dark:text-slate-200">伊利集团：</span>主导校园营销赛事，带动销售额<span class="font-bold text-primary">突破15万元</span>。</li>
+                            <li><span class="font-medium text-slate-800 dark:text-slate-200">奉浦七居：</span>担任条线助理，整理 2000+ 条档案，撰写 20+ 篇稿件，拍摄 10+ 条视频。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Honors Section -->
+    <section id="skills" class="py-20 bg-white dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 md:px-8 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-800 dark:text-white inline-flex items-center gap-3">
+                    <i class="fa-solid fa-medal text-primary"></i> 技能与荣誉
+                </h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-slate-800 dark:text-white"><i class="fa-solid fa-code text-primary mr-2"></i> 专业技能</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Skill 1 -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">数据分析 (Excel, Tableau, SQL, SPSS)</span>
+                                <span class="text-sm text-primary font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-primary h-2.5 rounded-full progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">电商运营 (eBay 实操, SOP 搭建)</span>
+                                <span class="text-sm text-blue-500 font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-blue-500 h-2.5 rounded-full progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">AI工具应用 (Prompt, Antigravity)</span>
+                                <span class="text-sm text-purple-500 font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-purple-500 h-2.5 rounded-full progress-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-slate-700 dark:text-slate-300">活动统筹与文案策划</span>
+                                <span class="text-sm text-green-500 font-bold">80%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+                                <div class="bg-green-500 h-2.5 rounded-full progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-colors cursor-default">文案策划</span>
+                        <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-colors cursor-default">视频剪辑</span>
+                        <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-colors cursor-default">公众号运营</span>
+                        <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20 hover:bg-primary hover:text-white transition-colors cursor-default">社团管理</span>
+                    </div>
+                </div>
+
+                <!-- Honors & Education -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-slate-800 dark:text-white"><i class="fa-solid fa-trophy text-yellow-500 mr-2"></i> 荣誉与认证</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 dark:bg-darkCard p-4 rounded-xl border border-slate-100 dark:border-slate-800 flex items-start gap-3 hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-award text-yellow-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">挑战杯上海市二等奖</h4>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-darkCard p-4 rounded-xl border border-slate-100 dark:border-slate-800 flex items-start gap-3 hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-certificate text-blue-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">MIT麻省理工</h4>
+                                <p class="text-xs text-slate-500">供应链证书</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-darkCard p-4 rounded-xl border border-slate-100 dark:border-slate-800 flex items-start gap-3 hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-laptop-code text-primary text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">计算机应用能力比赛</h4>
+                                <p class="text-xs text-slate-500">上海市三等奖</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-darkCard p-4 rounded-xl border border-slate-100 dark:border-slate-800 flex items-start gap-3 hover:shadow-md transition-shadow">
+                            <i class="fa-solid fa-star text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">上海市奖学金</h4>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 dark:bg-darkCard p-4 rounded-xl border border-slate-100 dark:border-slate-800 flex items-start gap-3 hover:shadow-md transition-shadow sm:col-span-2">
+                            <i class="fa-solid fa-book text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 dark:text-slate-200 text-sm">学术与知识产权</h4>
+                                <p class="text-xs text-slate-500">第一作者发表省级期刊论文 1 篇 / 外观专利第一著作人 1 项</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-primary/5 p-4 rounded-xl border border-primary/10">
+                        <h4 class="font-bold text-primary mb-2"><i class="fa-solid fa-graduation-cap mr-2"></i>教育背景</h4>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm">
+                            <span class="font-bold">上海商学院</span> | 全日制本科<br>
+                            物流管理专业 · 英语四六级通过
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative overflow-hidden">
+        <!-- Cute cat peeking from bottom -->
+        <div class="absolute bottom-0 right-10 text-6xl text-slate-300 dark:text-slate-700 z-0 transform translate-y-4 hover:translate-y-0 transition-transform duration-500">
+            <i class="fa-solid fa-cat"></i>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 md:px-8 text-center relative z-10 reveal">
+            <h2 class="text-3xl font-bold text-slate-800 dark:text-white mb-6">准备好一起工作了吗？</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-10 max-w-xl mx-auto">
+                我正在寻找一份充满挑战的实习机会，如果您对我的经历感兴趣，欢迎随时与我联系！
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+                <!-- Phone -->
+                <button onclick="copyText('18221800476', 'phone-toast')" class="group relative bg-white dark:bg-darkCard px-8 py-4 rounded-2xl shadow-sm hover:shadow-lg border border-slate-100 dark:border-slate-800 transition-all flex items-center justify-center gap-4 w-full sm:w-auto">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400 mb-1">点击复制电话</p>
+                        <p class="font-bold text-slate-800 dark:text-white">182 2180 0476</p>
+                    </div>
+                    <!-- Toast Notification -->
+                    <span id="phone-toast" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white text-xs py-1 px-3 rounded opacity-0 transition-opacity pointer-events-none">已复制!</span>
+                </button>
+
+                <!-- Email -->
+                <button onclick="copyText('1393313248@qq.com', 'email-toast')" class="group relative bg-white dark:bg-darkCard px-8 py-4 rounded-2xl shadow-sm hover:shadow-lg border border-slate-100 dark:border-slate-800 transition-all flex items-center justify-center gap-4 w-full sm:w-auto">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400 mb-1">点击复制邮箱</p>
+                        <p class="font-bold text-slate-800 dark:text-white">1393313248@qq.com</p>
+                    </div>
+                    <!-- Toast Notification -->
+                    <span id="email-toast" class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white text-xs py-1 px-3 rounded opacity-0 transition-opacity pointer-events-none">已复制!</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 py-8 text-center text-slate-500 text-sm">
+        <p class="mb-2">
+            <i class="fa-solid fa-cat text-primary"></i> 期待与您的合作喵~ 
+        </p>
+        <p>© 2026 陆欣怡. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
